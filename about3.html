@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/wdxc.css" />
+<title>安德烈的个人网站</title>
+</head>
+
+<body>
+<div class="banner">
+  <div class="logo"></div>
+  <div class="links">
+  	<ul>
+    	<li><a href="index.html">首页</a></li>
+        <li><a href="about1.html">个人资料</a></li>
+        <li><a href="about2.html">心情日记</a></li>
+        <li><a href="about3.html">相册</a></li>
+        <li><a href="about4.html">留言板</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+<div class="tit"><h3>相册列表</h3></div>
+<div id="box">
+	<div class="list"><a href="photo/photo.html"><img src='images/1.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/2.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/3.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/4.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/5.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/6.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/7.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/8.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/9.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/10.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/11.jpg'/></a></div>
+	<div class="list"><a href="photo/photo.html"><img src='images/12.jpg'/></a></div>
+</div> 
+   
+<div id="page">
+	<a href="javascript:void(0);" class="active">1</a>
+	<a href="javascript:void(0);">2</a>
+	<a href="javascript:void(0);">3</a>
+</div>
+
+<script type="text/javascript" src="js/move.js"></script>    
+<script type="text/javascript">
+window.onload = function(){
+	var Box = document.getElementById('box');
+	var list_l = myclass('list',Box);
+	var aLi = document.getElementById('page').getElementsByTagName('a');
+	var alist = [];
+	var olist = true;
+	for(var i=0; i<list_l.length; i++){
+		var Oleft = list_l[i].offsetLeft;
+		var Otop = list_l[i].offsetTop;
+		alist[i] = {left:Oleft,top:Otop}
+	}
+	for(var i=0; i<list_l.length; i++){
+		list_l[i].style.left = alist[i].left+"px";
+		list_l[i].style.top = alist[i].top+"px";
+		list_l[i].style.position = "absolute";
+		list_l[i].style.margin =0+"px";
+		list_l[i].style.opacity =1;
+	}
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].index = i;
+		aLi[i].onclick = function(){
+			if(olist===false){
+				return;
+			}
+			olist = false;
+			list_l = myclass('list',Box);
+			for(var n=0; n<aLi.length; n++){
+				aLi[n].className="";
+			}
+			this.className="active";
+			var Dates = sst(this.index);
+			var n=list_l.length-1;
+			var cont = 0;
+			var t=setInterval(function(){
+				buffer(list_l[n],{
+					top:150,
+					left:150,
+					width:50,
+					height:30,
+					opacity:0
+				},2,function(){
+					Box.removeChild(this);
+					cont++;
+					if(cont==list_l.length){
+						juest(Dates)
+					}
+					if(n<0){
+						clearInterval(t);
+					}
+				})
+				n--;
+			},100)
+			function juest(Dates){
+				var i=0;
+				var t=setInterval(function(){
+					if(i==Dates.length-1){
+						clearInterval(t);
+						olist=true;
+					}
+					var Odiv = document.createElement('div');
+					var Oimg = document.createElement('img');
+					Odiv.className="list";
+					Oimg.src = Dates[i];
+					Box.appendChild(Odiv);
+					Odiv.appendChild(Oimg);
+					Odiv.style.top= 150 +'px';
+					Odiv.style.left=150+'px';
+					Odiv.style.width = 50+'px';
+					Odiv.style.height=30+'px';
+					Odiv.style.position ='absolute';
+					Odiv.style.margin=0+'px';
+					fiexible(Odiv,{
+						left:alist[i].left,
+						top:alist[i].top,
+						width:170,
+						height:133
+					},3)
+					i++;
+					},100)
+			}
+			function sst(nums){
+				var Mus = nums*12;
+				var end = Mus+12;
+				var rest = [];
+				for(var i=Mus+1; i<=end; i++){
+					rest.push('images/'+i+'.jpg')
+				}
+				return rest;
+			}
+		}
+		
+	}
+	
+}
+function myclass(names,docu){
+	var obj = docu.getElementsByTagName('*');
+	var arr = [];
+	for(var i=0; i<obj.length; i++){
+		if(obj[i].className == names){
+			arr.push(obj[i]);
+			}
+		} 
+		return arr;
+	}
+</script>
+  <div style="text-align:center;clear:both">
+</div>
+<div class="icon">
+    	<a href="#"><img src="images/icon1.gif" /></a>
+        <a href="#"><img src="images/icon2.gif" /></a>
+        <a href="#"><img src="images/icon3.gif" /></a>
+        <a href="#"><img src="images/icon4.gif" /></a>
+</div></div> 
+
+</body>
+</html>

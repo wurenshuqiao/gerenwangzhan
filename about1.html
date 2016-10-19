@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/grzl.css" />
+<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
+<title>安德烈的个人网站</title>
+
+</head>
+
+<body>
+<div class="banner">
+  <div class="logo"></div>
+  <div class="links">
+  	<ul>
+    	<li><a href="index.html">首页</a></li>
+        <li><a href="about1.html">个人资料</a></li>
+        <li><a href="about2.html">心情日记</a></li>
+        <li><a href="about3.html">相册</a></li>
+        <li><a href="about4.html">留言板</a></li>
+    </ul>
+  </div>
+</div>
+<div class="main">
+	<div class="main_top">
+    	<div class="top_one">
+        <span>自我介绍</span>
+        <p>我是来自香港的安德烈，大家所看到的我的内在就像我的外表一样，敦厚和实在是我对自己最好的概括。我不飘，不浮，不躁，不懒。我内心充实，物质享乐和精神刺激都不是我的嗜好。我待人诚实，从没有花言巧语，但真诚和厚道使我总能赢得朋友的信赖。我专业扎实，看书是我最大的享受，钻研相机让我感觉其乐。对于摄影，我完全属于自学成材，对于风光摄影的兴趣来源于我对大自然根深蒂固的热爱。 </p>
+        	</div>
+            <div class="top_two">
+           <a href="photo/photo.html"> <img src="images/head.jpg" /></a>
+            </div>
+            </div>
+    <div class="main_down">
+		<div class="carousel1" id="carousel1">
+  			<p class="title-text"></p>
+  			<p class="alt-text"></p>
+  				<a target="_parent"  href=""><img class="cloudcarousel"  src="images/01.jpg"/></a> 
+  				<a target="_parent" ><img class="cloudcarousel"  src="images/02.jpg"/></a>
+  				<a target="_parent" ><img class="cloudcarousel"  src="images/03.jpg"/></a> 
+ 				<a target="_parent" ><img class="cloudcarousel"  src="images/04.jpg"/></a> 
+  				<a target="_parent" ><img class="cloudcarousel"  src="images/05.jpg"/></a> 
+  				<a target="_parent" ><img class="cloudcarousel"  src="images/06.jpg"/></a> 
+  				<a target="_parent" ><img class="cloudcarousel"  src="images/07.jpg"/></a> 
+	  			<a target="_parent" ><img class="cloudcarousel"  src="images/08.jpg"/></a>
+	 	<div id="but1" class="carouselLeft">  </div>
+  	 	<div id="but2" class="carouselRight">  </div>
+		</div>
+    </div>
+    <div class="icon">
+    	<a href="#"><img src="images/icon1.gif" /></a>
+        <a href="#"><img src="images/icon2.gif" /></a>
+        <a href="#"><img src="images/icon3.gif" /></a>
+        <a href="#"><img src="images/icon4.gif" /></a>
+    </div>
+</div> 
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/JavaScript" src="js/CloudCarousel.1.0.5.js"></script>
+<script type="text/JavaScript" src="js/jquery.mousewheel.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){						   
+	$("#carousel1").CloudCarousel({			
+		xPos:405,
+		yPos:60,
+		buttonLeft: $('#but1'),
+		buttonRight: $('#but2'),
+		altBox: $("#alt-text"),
+		titleBox: $("#title-text"),				
+		FPS:30,
+		reflHeight:86,
+		reflGap:2,
+		yRadius:40,
+		autoRotateDelay: 1200,
+		speed:0.2,
+		mouseWheel:true,
+		bringToFront:true
+	});	
+});
+</script>
+</body>
+</html>

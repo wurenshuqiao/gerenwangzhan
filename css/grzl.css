@@ -1,0 +1,27 @@
+*{ margin:0 auto; padding:0px;	list-style-type:none;}
+body{background:url(../images/grzy1.jpg) no-repeat;width:100%;height:100%; font-size:18px; }
+img,a{ border:0px; text-decoration:none;color:#FFF;}
+.banner{ width:870px; height:105px; margin-top:77px; }
+.logo{ background:url(../images/logo.gif) no-repeat;width:264px; height:70px; float:left;}
+.links{ margin-top:20px;width:600px; float:left;}
+.links ul li{float:left;height:45px;line-height:45px;width:110px;padding-left:10px;}
+.links ul li a{font-size:18px;text-align:center;padding-top:10px;display:block;}
+.links ul li a:hover{background:url(../images/links_bg.gif) repeat-x;}
+.main{ width:870px; height:600px;}
+.main_top{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3D000000', endColorstr='#3D000000');background:rgba(0,0,0,0.5);width:870px; height:370px;border-radius: 5px;}
+.top_one { color:#FFF; padding-left:40px; width:520px; float:left;}
+.top_one span{ font-size:32px; font-weight:bold; line-height:55px;}
+.top_one p{ padding-top:30px; line-height:30px;}
+.top_two{ padding-top:50px;margin-left:20px; width:248px; height:282px; float:left;}
+.main_down{filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3D000000', endColorstr='#3D000000');background:rgba(0,0,0,0.5);width:870px; height:330px;; margin-top:50px;border-radius: 5px;}
+.carousel1 {width:870px;height:330px;overflow:hidden;position:relative;margin:0 auto;padding:0px;}
+.carousel1 img {padding:0px; margin:0px;border:none;width:240px;height:180px;border:solid 1px #000;}
+.title-text {font-size:22px;margin:10px 20px 0 0;padding:0;text-align:right;}
+.alt-text {font-size:14px;margin:5px 20px 0 0;padding:0;text-align:right;}
+#carousel1 .user-c {padding:0;position:absolute;right:15px;bottom:10px;}
+.carouselLeft,.carouselRight{position:absolute;bottom:20px;width:30px;height:30px;overflow:hidden;cursor:pointe;}
+.carouselLeft {right:60px;background:url(../images/templatemo_slider_right.png) no-repeat;}
+.carouselRight {right:780px;background:url(../images/templatemo_slider_left.png) no-repeat;}
+.icon{float:right; margin-top:30px;opacity:0.4;filter:alpha(opacity=40);}
+.icon a{ padding-left:15px;}
+.icon a:hover{opacity:0.6;filter:alpha(opacity=60);}

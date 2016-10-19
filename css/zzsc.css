@@ -1,0 +1,65 @@
+
+.second {
+	width :248px;
+	height : 282px;
+	background-image: url('../images/head.jpg');
+}
+
+.second .changeable {
+	background-image: url('../images/head1.jpg');;
+}
+.covered {
+	position: relative;
+}
+
+.handle {
+	position: absolute;
+	width : 26px;
+	height: 26px;
+	margin-left  : -10px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align : center;
+}
+
+.handle span {
+	display : inline-block;
+	margin : 10px 1px 0;
+	color : #000;
+	-webkit-transition : .1s ease-out;
+	-moz-transition : .1s ease-out;
+	-ms-transition : .1s ease-out;
+	-o-transition : .1s ease-out;
+	transition : .1s ease-out;
+}
+
+.handle.vertical {
+	-webkit-transform : rotate(90deg);
+	-moz-transform : rotate(90deg);
+	-ms-transform : rotate(90deg);
+	-o-transform : rotate(90deg);
+	transform : rotate(90deg);
+}
+
+.handle:hover {
+	background-color: #555;
+}
+
+.handle:hover span {
+	color : #FFF;
+}
+
+.draggable {
+	background-color: #555;
+	cursor : move;
+}
+
+.draggable span {
+	margin : 1px 4px 0;
+	color  : #FFF;
+	-webkit-transition : .1s ease-out;
+	-moz-transition : .1s ease-out;
+	-ms-transition : .1s ease-out;
+	-o-transition : .1s ease-out;
+	transition : .1s ease-out;
+}

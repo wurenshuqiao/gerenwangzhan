@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>安德烈的个人网站</title>
+<link type="text/css" href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="banner">welcome to my website!</div>
+<div class="main">
+	
+	<div  id="featured">
+       <ul class="ui-tabs-nav">
+        	<li id="nav-fragment-1" class="ui-tabs-nav-item" >
+			<a href="#fragment-1"><img src="images/sy1_2.jpg"></a></li>
+			<li id="nav-fragment-2" class="ui-tabs-nav-item">
+			<a href="#fragment-2"><img src="images/sy2_2.jpg"></a></li>
+			<li id="nav-fragment-3" class="ui-tabs-nav-item ui-tabs-selected" >
+			<a href="#fragment-3"><img src="images/sy3_2.jpg"></a></li>
+			<li id="nav-fragment-4" class="ui-tabs-nav-item" >
+			<a href="#fragment-4"><img src="images/sy4_2.jpg"></a></li>
+			<li id="nav-fragment-5" class="ui-tabs-nav-item" >
+			<a href="#fragment-5"><img src="images/sy5_2.jpg"></a></li>
+        </ul>
+    	<div style class="ui-tabs-panel ui-tabs-hide" id="fragment-1">
+			<a href="#"><img alt="" src="images/sy1.jpg" width="100%"/></a>
+		</div>
+	
+		<div style class="ui-tabs-panel ui-tabs-hide" id="fragment-2">
+			<a href="#"><img alt="" src="images/sy2.jpg" width="100%"/></a>
+
+		</div>
+	
+		<div style class="ui-tabs-panel" id="fragment-3">
+			<a href="#"><img alt="" src="images/sy3.jpg" width="100%"/></a>
+	
+		</div>
+	
+		<div style class="ui-tabs-panel ui-tabs-hide" id="fragment-4">
+			<a href="#"><img alt="" src="images/sy4.jpg" width="100%"/></a>
+	
+		</div>
+	
+  		<div style class="ui-tabs-panel ui-tabs-hide" id="fragment-5">
+			<a href="#"><img alt="" src="images/sy5.jpg" width="100%"/></a>
+	
+		</div>
+
+    </div>
+	
+    	
+
+    	<div class="content">
+    		<img src="images/logo.gif">
+        <div class="links">
+        	<ul>
+            	<li><a href="index.html">首页</a></li>
+                <li><a href="about1.html">个人资料</a></li>
+                <li><a href="about2.html">心情日记</a></li>
+                <li><a href="about3.html">相册</a></li>
+                <li><a href="about4.html">留言板</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.1.4.2.min.js"></script>
+
+<script src="js/jquery-1.7.1.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 3000, true);
+	});
+</script>
+</body>
+</html>

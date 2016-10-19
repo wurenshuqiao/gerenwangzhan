@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+<div class="conter">
+	<div class="banner">
+    	<img src="images/logo.gif">
+    	<div class="tyt">
+    		<ul>
+        		<li><a href="index.html">首页</a></li>
+                <li><a href="about1.html">个人资料</a></li>
+                <li><a href="about2.html">心情日记</a></li>
+                <li><a href="about3.html">相册</a></li>
+                <li><a href="about4.html">留言板</a></li>
+        	</ul>
+    	</div>
+    </div>
+    
+    <div class="main">
+    	<div class="main_left">
+        	<em>
+			<script language="JavaScript1.2">
+  var message="大家的留言板:"
+  var neonbasecolor="#990099"
+  var neontextcolor="#FF00FF"
+  var neontextcolor2="#FF99FF"
+  var flashspeed=100
+  var flashingletters=3
+  var flashingletters2=1
+  var flashpause=0 
+var n=0
+  if (document.all||document.getElementById){
+  document.write('<font color="'+neonbasecolor+'">')
+  for (m=0;m<message.length;m++)
+  document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+  document.write('</font>')
+  }
+  else
+  document.write(message)
+function crossref(number){
+  var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+  return crossobj
+  }
+function neon(){
+  if (n==0){
+  for (m=0;m<message.length;m++)
+  crossref(m).style.color=neonbasecolor
+  }
+  crossref(n).style.color=neontextcolor
+if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
+  if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+if (n<message.length-1)
+  n++
+  else{
+  n=0
+  clearInterval(flashing)
+  setTimeout("beginneon()",flashpause)
+  return
+  }
+  }
+function beginneon(){
+  if (document.all||document.getElementById)
+  flashing=setInterval("neon()",flashspeed)
+  }
+  beginneon()
+</script>
+			</em>
+            <p  class="count" id="count" ></p>
+            	<div class="text">
+                    <form name="reply"  method="post" onsubmit="return validateForm( );" class="main_text"> 
+                        
+                        <ul  class="rectangle">
+                        <li class="top1"></li>
+                        <li class="top2"></li>
+                        <li class="top3"></li>
+                        </ul>
+                        <ul  class="rectangle">
+                        <li class="middle1"></li>
+                        <li class="middle2">
+                             
+                                 
+                                <textarea  id="text" class="main_re"  name="cont" cols="60" rows="8" onkeydown="countchars()" style="border:0px;"></textarea><br />  
+                                
+                                     
+                        </li>
+                        <li class="middle3"></li>
+                        </ul>
+                        <ul  class="rectangle">
+                        <li class="end1"></li>
+                        <li class="end2"></li>
+                        <li class="end3"></li>
+                        </ul>
+                            <input   id="bt" class="main_btn" type="submit" value="提&nbsp;&nbsp;交">  
+                  </form> 
+          </div>	
+            	<div class="ou">
+          			<div class="open">
+                <span onclick="openShutManager(this,'box',false,'联系方式关闭层','联系方式')">联系方式</span>
+                <div class="odiv" id="box" style="display:none"><table border="0" cellpadding="0" cellspacing="0">
+                    <tr><td class="lt"></td><td class="t"></td><td class="rt"></td></tr>
+                    <tr><td class="l"></td><td class="box">
+                    <h3 class="tit"><b>我的联系方式</b><a class="cls" href="javascript:;" onclick="openShutManager(this,'box',false)" title="关闭">关闭</a></h3>
+                    <div class="nr">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--安德烈<br />
+                        &nbsp;&nbsp;电子邮箱：myname@gmailll.com<br />
+                       &nbsp;&nbsp; MSN：haname@hotmailll.com<br />
+                       电&nbsp;&nbsp;&nbsp;&nbsp;话：(00852)12345678<br />
+                        传&nbsp;&nbsp;&nbsp;&nbsp;真：(00852)12345678<br />
+                    </div>
+                    </td><td class="r"></td></tr>
+                    <tr><td class="lb"></td><td class="b"></td><td class="rb"></td>
+                    </tr></table><s><i></i></s>
+                 </div>
+            </div>
+
+					<div class="tab">
+						<div class="tab_menu">
+							<ul>
+								<li class="selected">星期一</li>
+								<li>星期二</li>
+								<li>星期三</li>
+								<li>星期四</li>
+								<li>星期五</li>
+							</ul>
+						</div>
+						<div class="tab_box"> 
+							 <div>
+							 	
+							 		<span>匿名好友：&nbsp;&nbsp;双鱼座</span>
+							 			<p>&nbsp;&nbsp;&nbsp;&nbsp;爱情就是含笑饮砒霜——明知道它有毒，但还是乐在其中。 </p>
+									
+									<span>匿名好友:&nbsp;&nbsp;小豆豆</span>
+							 			<p>&nbsp;&nbsp;&nbsp;&nbsp;睡眠是一门艺术——谁也无法阻挡我追求艺术的脚步！</p>
+									
+							 </div>
+		 					<div class="hide">
+								<span>匿名好友：&nbsp;&nbsp;pp</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;世上最可怕的报复就是宽恕</p>
+								<span>匿名好友：&nbsp;&nbsp;一季樱花°落满江南</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;如果跟导师讲不清楚，那么就把他搞糊涂吧！</p>
+							</div>
+							 <div class="hide">
+							 	<span>匿名好友:&nbsp;&nbsp;久居深巷,独守旧时光</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;你入了丐帮，打扮得很讲究啊！</p>
+								<span>匿名好友：&nbsp;&nbsp;是人是狗时间会告诉你</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;我们走得太快，灵魂都跟不上了... </p>
+							 </div> 
+							 <div class="hide">
+							 	<span>匿名好友：&nbsp;&nbsp;╭浅沫☆漓殇〃</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;如果回帖是一种美德，那我早就成为圣人了！</p>
+								<span>匿名好友:&nbsp;&nbsp;最怕的是得不到又忘不了</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;快乐是一件严肃的小事。</p>
+							 </div>
+							 <div class="hide">
+							 	<span>匿名好友：&nbsp;&nbsp;______冷巷ペ</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;如果不考虑身高，我脖子以下也算是帅哥</p>
+								<span>匿名好友：&nbsp;&nbsp;笑看世态炎凉人心淡薄べ</span>
+							 	<p>&nbsp;&nbsp;&nbsp;&nbsp;如果一个人不知道他要驶向哪个码头，那么任何风都不会是顺风。</p>
+							 </div>          
+						</div>
+			</div>
+            	</div>
+        </div>
+        <div class="main_right">
+        	<div id="js_F"><!--<img src="images/main-right01.jpg">--></div>
+            <div id="ban">
+        	<ul class="cf">
+            	<li><span><img src="images/me.jpg"></span></li>
+                <li><span><img src="images/at.jpg"></span></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer">
+    	<ul>
+    			<li><img src="images/icon1.gif"></li>
+                <li><img src="images/icon2.gif"></li>
+                <li><img src="images/icon3.gif"></li>
+                <li><img src="images/icon4.gif"></li>
+        </ul>
+    </div>
+    
+    
+
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+<!--///*--><![CDATA[/*><!--*/
+var js_F = document.getElementById("js_F");
+var imgList = ["images/221.jpg", "images/222.jpg", "images/223.jpg", "images/224.jpg", ];
+var imgTemp = new Array();
+for (i=0; i<imgList.length; i++){
+ imgTemp[i] = new Image();
+ imgTemp[i].src = imgList[i];
+}
+var imgs = new Array();
+var imgID = 0, nextImgID, proveImgID;
+var tf = true; //图片移动方向标志
+var speed1 = 5; speed2 =2200; //速度
+function imgInit(){
+ var content = '';
+ for (i=0; i<imgList.length; i++){
+  content += '<img src="' + imgList[i] + '" style="left:0;" />\n';
+ }
+ js_F.innerHTML = content;
+ imgs = js_F.getElementsByTagName('img');
+ imgs[0].style.zIndex = 20;
+ imgs[1].style.zIndex = 15;
+}
+function imgChange(){
+ if ((imgID+1)<imgList.length){
+  nextImgID = imgID + 1;
+ } else if (imgID<imgList.length) {
+  nextImgID = 0;
+ } else {
+  imgID = 0;
+  nextImgID = imgID + 1;
+ }
+ imgs[imgID].style.zIndex = 20;
+ imgs[nextImgID].style.zIndex = 15;
+ setTimeout('imgShow()',speed2);
+}
+function imgShow(){
+ if (tf){ //imgID向左边移动2/3，nextImgID向右边1/3
+  if (parseInt(imgs[imgID].style.left)>-180){
+   imgs[imgID].style.left = (parseInt(imgs[imgID].style.left)-10) + 'px';
+   imgs[nextImgID].style.left = (parseInt(imgs[nextImgID].style.left)+5) + 'px';
+   setTimeout('imgShow()',speed1);
+  } else {
+   tf = !tf;
+   imgs[imgID].style.zIndex = 15;
+   imgs[nextImgID].style.zIndex = 20;
+   setTimeout('imgShow()',speed1);
+  }
+ } else {
+  if (parseInt(imgs[imgID].style.left)<0){
+   imgs[imgID].style.left = (parseInt(imgs[imgID].style.left)+10) + 'px';
+   imgs[nextImgID].style.left = (parseInt(imgs[nextImgID].style.left)-5) + 'px';
+   setTimeout('imgShow()',speed1);
+  } else {
+   imgs[imgID].style.zIndex = 10;
+   tf = !tf;
+   imgID++;
+   imgChange();
+  }
+ }
+}
+imgInit();
+imgChange();
+/*]]>*///-->
+</script>
+
+<script type="text/javascript" src="js/jquery.1.4.2.min.js"></script>
+<script type="text/javascript" > 
+ 
+	$(function(){
+	    var wweya_li =$("div.tab_menu ul li");
+	    wweya_li.click(function(){
+		$(this).addClass("selected")            //当前<li>元素高亮
+		 .siblings().removeClass("selected");  //去掉其它同辈<li>元素的高亮
+            var index =  wweya_li.index(this);  // 获取当前点击的<li>元素 在 全部li元素中的索引。
+		$("div.tab_box > div")   	//选取子节点。不选取子节点的话，会引起错误。如果里面还有div 
+		.eq(index).show(100)   //显示 <li>元素对应的<div>元素
+			.siblings().hide(); //隐藏其它几个同辈的<div>元素						}).hover(function(){
+			$(this).addClass("hover");
+		},function(){
+			$(this).removeClass("hover");			
+		})
+	})
+</script>
+
+
+
+
+<script type="text/javascript">
+function openShutManager(oSourceObj,oTargetObj,shutAble,oOpenTip,oShutTip){
+var sourceObj = typeof oSourceObj == "string" ? document.getElementById(oSourceObj) : oSourceObj;
+var targetObj = typeof oTargetObj == "string" ? document.getElementById(oTargetObj) : oTargetObj;
+var openTip = oOpenTip || "";
+var shutTip = oShutTip || "";
+if(targetObj.style.display!="none"){
+   if(shutAble) return;
+   targetObj.style.display="none";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = shutTip; 
+   }
+} else {
+   targetObj.style.display="block";
+   if(openTip  &&  shutTip){
+    sourceObj.innerHTML = openTip; 
+   }
+}
+}
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+var text=document.getElementById("text");
+var bt=document.getElementById("bt");
+<!--var talkList=document.getElementById("talk_list");
+-->
+ 	function validateForm(){   
+    if(document.reply.title.value == ""){ //通过form名来获取form   
+       alert("bt.onclick");   
+        document.reply.title.focus();   
+        return false;   
+    }      
+    if(document.forms[0].cont.value == ""){ //通过forms数组获取form   
+        alert("亲，请记得输入留言！");   
+        document.reply.cont.focus();   
+        return false;   
+    }   
+    return true;   
+ }
+bt.onclick=function(){
+	var val=text.value;
+	var li=document.createElement('li');
+	li.innerHTML='<span>2013年12月14日&nbsp;&nbsp; 12：00：09</span><p>'+val+'</p>';
+	talkList.appendChild(li);		
+	
+} 
+function countchars(){
+	var s=document.getElementById("text").value;
+	if (!isMaxString(s,100))
+	document.getElementById("text").value=s.substr(0,100);
+	document.getElementById("count").innerHTML=document.getElementById("text").value.length;}
+function isMaxString(inputString,count){
+	if(inputString.length>count) return false;
+	else return true;
+	}
+	
+	
+	
+
+</script>
+
+

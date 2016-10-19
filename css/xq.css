@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,p,a,img,div,span,h1,h2,h3,em{margin:0px;padding:0px;}
+ul{list-style:none;}
+a{text-decoration:none;color:#FFF;}
+img{border:0 none; vertical-align:top;}
+body{font-size:12px;color:#FFF;background:url(../images/xq_bg.jpg) no-repeat;}
+.banner{width:870px;position:relative;margin-bottom:50px;margin:0 auto;margin-top:77px;}
+.links{position:absolute;left:274px;top:20px;}
+.links ul li{float:left;height:45px;line-height:45px;}
+.links ul li a{font-size:18px;text-align:center;padding-top:10px;display:block;width:110px;}
+.links ul li a:hover{background:url(../images/links_bg.gif) repeat-x;}
+.main{width:870px;margin:0 auto;}
+.list {margin:0 auto;width:870px;height:auto;margin-top:40px;}
+.list-item{width:747px;padding:15px 42px 10px 20px;_overflow:hidden;margin-bottom:15px;border-radius: 5px;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3D000000', endColorstr='#3D000000');background:rgba(0,0,0,0.5);}
+.title {font-size:16px;color:#FFF;}
+.title a:hover{text-decoration:underline;color:#000;}
+.date {float:right;color:#c4c3c3;}
+.date a{color:#c4c3c3;}
+.date a:hover{text-decoration:underline;color:#000000;}
+.block {float:left;margin:-80px 0px 0px 130px;_position:relative;_left:-130px;_top:0px;}
+.desc{padding-top:10px;line-height:22px;}
+.jpage-panel{width:870px;clear:both;height:25px;line-height:25px;text-align:center;}
+.jpage-pagination li{float: left;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3D000000', endColorstr='#3D000000');background:rgba(0,0,0,0.7);border: 1px solid #E3E3E3;border-radius: 2px;padding: 0 10px;margin-right: 5px;color: #0381BB;cursor: pointer;margin-top:50px;_margin-top:10px;}
+.jpage-pagination li:hover{background: #E2E2E2;border: 1px solid #aaa;outline: 1px solid #fff;font-weight: bold;}
+.jpage-pagination .active,.jpage-pagination .active:hover{color: #F03800;background: #fff;}
+.footer{float:right;margin:70px 238px 10px 0px;_margin:20px 117px 10px 0px;}
+.footer img{padding-left:15px;opacity:0.4;filter:alpha(opacity=40);}
+.footer a:hover{opacity:0.6;filter:alpha(opacity=60);}
+
